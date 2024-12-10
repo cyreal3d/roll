@@ -72,9 +72,3 @@ style.innerHTML = `
     }
 `;
 document.head.appendChild(style);
-
-        border-radius: 50%;
-        top: 0;
-    }
-`;
-document.head.appendChild(style);
