@@ -74,3 +74,8 @@ style.innerHTML = `
 `;
 document.head.appendChild(style);
 
+        top: 0;
+    }
+`;
+document.head.appendChild(style);
+
