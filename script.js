@@ -1,6 +1,7 @@
 const gameContainer = document.getElementById('game-container');
 const hole = document.getElementById('hole');
 
+// Function to create an apple
 function createApple() {
     const apple = document.createElement('div');
     apple.classList.add('apple');
@@ -56,10 +57,10 @@ function createApple() {
     });
 }
 
-// Create apples at random intervals
+// Spawn apples at random intervals
 setInterval(createApple, 2000);
 
-// Apple styling
+// Add styling for apples
 const style = document.createElement('style');
 style.innerHTML = `
     .apple {
@@ -72,3 +73,4 @@ style.innerHTML = `
     }
 `;
 document.head.appendChild(style);
+
