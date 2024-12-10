@@ -1,30 +1,119 @@
+/* Global Styles */
 body {
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #a1d3a2; /* Light green background */
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
-#game-container {
+header {
     position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: radial-gradient(circle, #ffffff, #9cd4a6); /* Subtle radial gradient */
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    color: #fff;
 }
 
-#hole {
+.overlay {
     position: absolute;
-    width: 100px;
-    height: 100px;
-    background: #000;
-    border-radius: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.navbar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.about .text {
+    max-width: 50%;
+}
+
+.about h2 {
+    font-size: 2rem;
+}
+
+/* Products Section */
+.products {
+    background: #f7f7f7;
+    padding: 50px;
+    text-align: center;
+}
+
+.products .grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.products .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.products .card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.products .card h3 {
+    margin: 15px 0;
+}
+
+/* Footer Section */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .socials a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
 }
